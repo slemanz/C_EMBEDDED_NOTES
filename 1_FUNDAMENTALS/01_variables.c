@@ -1,10 +1,12 @@
-/************************************************
-*                                               *
-*           DATA TYPES AND VARIABLES            *
-*                                               *
-*************************************************/
+/**********************************************************************************
+*                                                                                 *
+*                            DATA TYPES AND VARIABLES                             *
+*                                                                                 *
+***********************************************************************************/
 #include <stdio.h>
 
+void myFun(void);
+int myScore2; // Global
 
 void main()
 {
@@ -24,5 +26,23 @@ void main()
 	printf("Size of int data type: %ld\n", sizeof(int));
 	printf("Size of long data type: %ld\n", sizeof(long));
 	printf("Size of long long data type: %ld\n\n", sizeof(long long));
+
+	// variables names will be replace by an adress when compile
+
+	// Declaration vs Definition
+	int myScore; // Definition
+	// extern int myScore; // Declaration (defined in other file)
+
+	// Scope: can be Local and Global
+	myScore = 200; // Local
+	printf("1- My Score: %d\n", myScore);
+	myFun();
+
+}
+
+void myFun(void)
+{
+	myScore2 = 500;
+	printf("2- My Score: %d\n", myScore2);
 
 }
