@@ -5,3 +5,5 @@ variables:
 
 address:
 	gcc -o exec 02_address.c
+classes:
+	gcc -o exec 03_classes.c
