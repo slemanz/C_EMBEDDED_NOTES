@@ -1,4 +1,4 @@
-SRC_CLASSES=03_classes.c 03__extern.c
+SRC_CLASSES=03__classes.c 03_extern.c
 
 all:
 
