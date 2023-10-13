@@ -1,3 +1,5 @@
+SRC_CLASSES=03_classes.c 03-1_extern.c
+
 all:
 
 variables:
@@ -6,4 +8,4 @@ variables:
 address:
 	gcc -o exec 02_address.c
 classes:
-	gcc -o exec 03_classes.c
+	gcc -o exec ${SRC_CLASSES}
