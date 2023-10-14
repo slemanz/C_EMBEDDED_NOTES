@@ -9,3 +9,5 @@ address:
 	gcc -o exec 02_address.c
 classes:
 	gcc -o exec ${SRC_CLASSES}
+functions:
+	gcc -o exec 04_functions.c

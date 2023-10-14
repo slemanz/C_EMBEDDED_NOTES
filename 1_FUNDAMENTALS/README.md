@@ -10,4 +10,4 @@ __[3. Storage Classes](03__classes.c)__ - use `make classes` to build.
 
 * __[3.1. Extern](03_extern.c)__
 
-__4__
+__[4. Functions](04_functions.c)__ - use `make functions` to build.
