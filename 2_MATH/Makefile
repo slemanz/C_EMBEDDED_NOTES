@@ -1,6 +1,8 @@
 TARGET=exec
-SRCS=src/main.c
+SRC = ./src
+INCLUDE = ./include
+SRCS = src/main.c src/math.c
 
 all:
-	gcc -o exec ${SRCS}
+	gcc -I ${INCLUDE} -o exec ${SRCS}
 
