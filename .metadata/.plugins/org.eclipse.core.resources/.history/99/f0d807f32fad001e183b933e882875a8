@@ -17,7 +17,6 @@ int main(void) {
     // Enable clock for GPIOC
     RCC_AHB1ENR |= RCC_AHB1ENR_GPIOCEN;
 
-
     // Set GPIOC pin 5 as output
     GPIOC_MODER &= ~(0x3 << (5 * 2)); // Clear mode bits for pin 5
     GPIOC_MODER |= GPIO_MODER_OUTPUT;
