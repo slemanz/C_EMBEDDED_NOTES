@@ -1,0 +1,35 @@
+04:33:26 **** Incremental Build of configuration Debug for project 3_EMBEDDED_HELLO_WORLD ****
+make -j8 all 
+arm-none-eabi-size  3_EMBEDDED_HELLO_WORLD.elf 
+   text	   data	    bss	    dec	    hex	filename
+    716	      8	   1568	   2292	    8f4	3_EMBEDDED_HELLO_WORLD.elf
+Finished building: default.size.stdout
+ 
+04:33:49 **** Incremental Build of configuration Debug for project 3_EMBEDDED_HELLO_WORLD ****
+make -j8 all 
+arm-none-eabi-size  3_EMBEDDED_HELLO_WORLD.elf 
+   text	   data	    bss	    dec	    hex	filename
+    716	      8	   1568	   2292	    8f4	3_EMBEDDED_HELLO_WORLD.elf
+Finished building: default.size.stdout
+ 
+04:34:51 **** Incremental Build of configuration Debug for project 3_EMBEDDED_HELLO_WORLD ****
+make -j8 all 
+arm-none-eabi-size  3_EMBEDDED_HELLO_WORLD.elf 
+   text	   data	    bss	    dec	    hex	filename
+    716	      8	   1568	   2292	    8f4	3_EMBEDDED_HELLO_WORLD.elf
+Finished building: default.size.stdout
+ 
+04:35:06 **** Incremental Build of configuration Debug for project 3_EMBEDDED_HELLO_WORLD ****
+make -j8 all 
+arm-none-eabi-size  3_EMBEDDED_HELLO_WORLD.elf 
+   text	   data	    bss	    dec	    hex	filename
+    716	      8	   1568	   2292	    8f4	3_EMBEDDED_HELLO_WORLD.elf
+Finished building: default.size.stdout
+ 
+04:38:01 **** Incremental Build of configuration Debug for project 3_EMBEDDED_HELLO_WORLD ****
+make -j8 all 
+arm-none-eabi-size  3_EMBEDDED_HELLO_WORLD.elf 
+   text	   data	    bss	    dec	    hex	filename
+    716	      8	   1568	   2292	    8f4	3_EMBEDDED_HELLO_WORLD.elf
+Finished building: default.size.stdout
+ 
