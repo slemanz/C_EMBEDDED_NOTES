@@ -25,7 +25,6 @@ int main(void) {
     // Set GPIOC pin 5 high
     GPIOC_ODR |= GPIO_ODR_PIN;
 
-
     // Loop forever
     while(1) {
     }
