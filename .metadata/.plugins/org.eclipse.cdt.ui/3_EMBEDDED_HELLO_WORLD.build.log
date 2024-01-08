@@ -1,10 +1,17 @@
-04:38:01 **** Incremental Build of configuration Debug for project 3_EMBEDDED_HELLO_WORLD ****
+04:34:44 **** Incremental Build of configuration Debug for project 3_EMBEDDED_HELLO_WORLD ****
 make -j8 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F401RETx -DSTM32F4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "3_EMBEDDED_HELLO_WORLD.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/sleman/_git/C-EMBEDDED-NOTES/3_EMBEDDED_HELLO_WORLD/STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="3_EMBEDDED_HELLO_WORLD.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 3_EMBEDDED_HELLO_WORLD.elf
+ 
 arm-none-eabi-size  3_EMBEDDED_HELLO_WORLD.elf 
+arm-none-eabi-objdump -h -S 3_EMBEDDED_HELLO_WORLD.elf  > "3_EMBEDDED_HELLO_WORLD.list"
    text	   data	    bss	    dec	    hex	filename
-    716	      8	   1568	   2292	    8f4	3_EMBEDDED_HELLO_WORLD.elf
+   3404	    100	   1900	   5404	   151c	3_EMBEDDED_HELLO_WORLD.elf
 Finished building: default.size.stdout
  
+Finished building: 3_EMBEDDED_HELLO_WORLD.list
+ 
 
-04:38:01 Build Finished. 0 errors, 0 warnings. (took 415ms)
+04:34:45 Build Finished. 0 errors, 0 warnings. (took 602ms)
 
