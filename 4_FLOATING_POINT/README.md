@@ -1,6 +1,6 @@
 # 4- FLOATING POINT
 
-A complete program with math operations (add, sub, mpy and div).
+A floating point use example. With the most important.
 
 Use `make` to build in "./exec" file.
 
