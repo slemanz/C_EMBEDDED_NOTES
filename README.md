@@ -9,4 +9,4 @@ __[3. EMBEDDED HELLO WORLD](3_EMBEDDED_HELLO_WORLD/)__ - Hello world using print
 
 __[4. FLOATING POINT](4_FLOATING_POINT/)__ - Floating point use example.
 
-__[5. POINTERS](4_POINTERS/)__ - Most important basic things about pointers.
+__[5. POINTERS](5_POINTERS/)__ - Most important basic things about pointers.
