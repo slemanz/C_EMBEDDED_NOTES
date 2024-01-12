@@ -12,3 +12,5 @@ __[4. FLOATING POINT](4_FLOATING_POINT/)__ - Floating point use example.
 __[5. POINTERS](5_POINTERS/)__ - Most important basic things about pointers.
 
 __[6. OPERATORS](6_OPERATORS/)__ - Most important basic things about operators.
+
+__[7. DECISION MAKING](7_DECISION_MAKING/)__ - Summary about if, else, else if, conditional operator and switch case.
