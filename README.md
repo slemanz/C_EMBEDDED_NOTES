@@ -16,3 +16,5 @@ __[6. OPERATORS](6_OPERATORS/)__ - Most important basic things about operators.
 __[7. DECISION MAKING](7_DECISION_MAKING/)__ - Summary about if, else, else if, conditional operator and switch case.
 
 __[8. BITWISE OPERATORS](8_BITWISE_OPERATORS/)__ - All about main bitwise operations and the mainly applications (set, clear, test and toggle).
+
+__[9. EMBEDDED LED ON](9_EMBEDDED_LED_ON/)__ - Code to turn on a led with step by step guide.

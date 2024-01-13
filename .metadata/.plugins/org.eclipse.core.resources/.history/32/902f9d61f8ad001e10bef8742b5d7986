@@ -1,9 +1,0 @@
-#include <stdio.h>
-
-int main(void) {
-
-	printf("Teste\n");
-
-	for(;;);
-	return 0;
-}
