@@ -3005,3 +3005,36 @@ java.lang.Exception: Invalid thread id: 1
 
 !ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2024-01-14 05:52:02.477
 !MESSAGE Existing sessions are:
+!SESSION 2024-01-14 08:25:16.753 -----------------------------------------------
+eclipse.buildId=Version 1.14.0
+java.version=17.0.8.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=pt_BR
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2024-01-14 08:25:30.806
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2024-01-14 08:25:30.808
+!MESSAGE Log4j2 initialized with config file /home/sleman/_git/C-EMBEDDED-NOTES/.metadata/.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2024-01-14 08:25:38.778
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-01-14 08:26:11.885
+!MESSAGE Indexed '13_EMBEDDED_PIN_READ' (3 sources, 0 headers) in 0.151 sec: 74 declarations; 73 references; 12 unresolved inclusions; 0 syntax errors; 44 unresolved names (23%)
+!SESSION 2024-01-14 08:32:19.966 -----------------------------------------------
+eclipse.buildId=Version 1.14.0
+java.version=17.0.8.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=pt_BR
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2024-01-14 08:32:29.308
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2024-01-14 08:32:29.310
+!MESSAGE Log4j2 initialized with config file /home/sleman/_git/C-EMBEDDED-NOTES/.metadata/.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2024-01-14 08:32:36.967
+!MESSAGE Started RMI Server, listening on port 41337
