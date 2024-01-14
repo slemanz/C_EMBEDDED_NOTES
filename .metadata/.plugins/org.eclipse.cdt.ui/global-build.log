@@ -1,234 +1,37 @@
-15:39:17 **** Clean-only build of configuration Debug for project 9_EMBEDDED_LED_ON ****
+05:36:35 **** Clean-only build of configuration Debug for project 09_EMBEDDED_LED_ON ****
 make -j8 clean 
 rm -rf ./Startup/startup_stm32f401retx.d ./Startup/startup_stm32f401retx.o
 rm -rf ./Src/main.cyclo ./Src/main.d ./Src/main.o ./Src/main.su ./Src/syscalls.cyclo ./Src/syscalls.d ./Src/syscalls.o ./Src/syscalls.su ./Src/sysmem.cyclo ./Src/sysmem.d ./Src/sysmem.o ./Src/sysmem.su
 rm -rf 9_EMBEDDED_LED_ON.elf 9_EMBEDDED_LED_ON.list 9_EMBEDDED_LED_ON.map default.size.stdout
  
-15:39:17 **** Incremental Build of configuration Debug for project 9_EMBEDDED_LED_ON ****
+05:36:36 **** Build of configuration Debug for project 09_EMBEDDED_LED_ON ****
 make -j8 all 
 arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -DDEBUG -c -x assembler-with-cpp -MMD -MP -MF"Startup/startup_stm32f401retx.d" -MT"Startup/startup_stm32f401retx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Startup/startup_stm32f401retx.o" "../Startup/startup_stm32f401retx.s"
 arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F401RETx -DSTM32F4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
 arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F401RETx -DSTM32F4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/syscalls.o"
 arm-none-eabi-gcc "../Src/sysmem.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F401RETx -DSTM32F4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/sysmem.o"
-arm-none-eabi-gcc -o "9_EMBEDDED_LED_ON.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/sleman/_git/C-EMBEDDED-NOTES/9_EMBEDDED_LED_ON/STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="9_EMBEDDED_LED_ON.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: 9_EMBEDDED_LED_ON.elf
+arm-none-eabi-gcc -o "09_EMBEDDED_LED_ON.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/sleman/_git/C-EMBEDDED-NOTES/09_EMBEDDED_LED_ON/STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="09_EMBEDDED_LED_ON.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 09_EMBEDDED_LED_ON.elf
  
-arm-none-eabi-size  9_EMBEDDED_LED_ON.elf 
-arm-none-eabi-objdump -h -S 9_EMBEDDED_LED_ON.elf  > "9_EMBEDDED_LED_ON.list"
+arm-none-eabi-size  09_EMBEDDED_LED_ON.elf 
+arm-none-eabi-objdump -h -S 09_EMBEDDED_LED_ON.elf  > "09_EMBEDDED_LED_ON.list"
    text	   data	    bss	    dec	    hex	filename
-    704	      8	   1568	   2280	    8e8	9_EMBEDDED_LED_ON.elf
+    728	      8	   1568	   2304	    900	09_EMBEDDED_LED_ON.elf
 Finished building: default.size.stdout
  
-Finished building: 9_EMBEDDED_LED_ON.list
+Finished building: 09_EMBEDDED_LED_ON.list
  
-15:41:32 **** Clean-only build of configuration Debug for project 3_EMBEDDED_HELLO_WORLD ****
-make -j8 clean 
-rm -rf ./Startup/startup_stm32f401retx.d ./Startup/startup_stm32f401retx.o
-rm -rf ./Src/main.cyclo ./Src/main.d ./Src/main.o ./Src/main.su ./Src/syscalls.cyclo ./Src/syscalls.d ./Src/syscalls.o ./Src/syscalls.su ./Src/sysmem.cyclo ./Src/sysmem.d ./Src/sysmem.o ./Src/sysmem.su
-rm -rf 3_EMBEDDED_HELLO_WORLD.elf 3_EMBEDDED_HELLO_WORLD.list 3_EMBEDDED_HELLO_WORLD.map default.size.stdout
- 
-15:41:32 **** Build of configuration Debug for project 3_EMBEDDED_HELLO_WORLD ****
+05:37:09 **** Incremental Build of configuration Debug for project 03_EMBEDDED_HELLO_WORLD ****
 make -j8 all 
-arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -DDEBUG -c -x assembler-with-cpp -MMD -MP -MF"Startup/startup_stm32f401retx.d" -MT"Startup/startup_stm32f401retx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Startup/startup_stm32f401retx.o" "../Startup/startup_stm32f401retx.s"
-arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F401RETx -DSTM32F4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
-arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F401RETx -DSTM32F4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/syscalls.o"
-arm-none-eabi-gcc "../Src/sysmem.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F401RETx -DSTM32F4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/sysmem.o"
-arm-none-eabi-gcc -o "9_EMBEDDED_LED_ON.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/sleman/_git/C-EMBEDDED-NOTES/9_EMBEDDED_LED_ON/STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="9_EMBEDDED_LED_ON.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: 9_EMBEDDED_LED_ON.elf
- 
-arm-none-eabi-size  9_EMBEDDED_LED_ON.elf 
-arm-none-eabi-objdump -h -S 9_EMBEDDED_LED_ON.elf  > "9_EMBEDDED_LED_ON.list"
+arm-none-eabi-size  03_EMBEDDED_HELLO_WORLD.elf 
    text	   data	    bss	    dec	    hex	filename
-   3404	    100	   1900	   5404	   151c	9_EMBEDDED_LED_ON.elf
+   3404	    100	   1900	   5404	   151c	03_EMBEDDED_HELLO_WORLD.elf
 Finished building: default.size.stdout
  
-Finished building: 9_EMBEDDED_LED_ON.list
- 
-15:41:33 **** Clean-only build of configuration Debug for project 9_EMBEDDED_LED_ON ****
-make -j8 clean 
-rm -rf ./Startup/startup_stm32f401retx.d ./Startup/startup_stm32f401retx.o
-rm -rf ./Src/main.cyclo ./Src/main.d ./Src/main.o ./Src/main.su ./Src/syscalls.cyclo ./Src/syscalls.d ./Src/syscalls.o ./Src/syscalls.su ./Src/sysmem.cyclo ./Src/sysmem.d ./Src/sysmem.o ./Src/sysmem.su
-rm -rf 9_EMBEDDED_LED_ON.elf 9_EMBEDDED_LED_ON.list 9_EMBEDDED_LED_ON.map default.size.stdout
- 
-15:41:33 **** Incremental Build of configuration Debug for project 9_EMBEDDED_LED_ON ****
+05:37:37 **** Incremental Build of configuration Debug for project 09_EMBEDDED_LED_ON ****
 make -j8 all 
-arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -DDEBUG -c -x assembler-with-cpp -MMD -MP -MF"Startup/startup_stm32f401retx.d" -MT"Startup/startup_stm32f401retx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Startup/startup_stm32f401retx.o" "../Startup/startup_stm32f401retx.s"
-arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F401RETx -DSTM32F4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
-arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F401RETx -DSTM32F4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/syscalls.o"
-arm-none-eabi-gcc "../Src/sysmem.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F401RETx -DSTM32F4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/sysmem.o"
-../Src/main.c: In function 'main':
-../Src/main.c:28:19: warning: unused variable 'GPIO_mode' [-Wunused-variable]
-   28 |         uint32_t *GPIO_mode = (uint32_t *)(0x40020800 + 0x00);
-      |                   ^~~~~~~~~
-arm-none-eabi-gcc -o "3_EMBEDDED_HELLO_WORLD.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/sleman/_git/C-EMBEDDED-NOTES/3_EMBEDDED_HELLO_WORLD/STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="3_EMBEDDED_HELLO_WORLD.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: 3_EMBEDDED_HELLO_WORLD.elf
- 
-arm-none-eabi-size  3_EMBEDDED_HELLO_WORLD.elf 
-arm-none-eabi-objdump -h -S 3_EMBEDDED_HELLO_WORLD.elf  > "3_EMBEDDED_HELLO_WORLD.list"
+arm-none-eabi-size  09_EMBEDDED_LED_ON.elf 
    text	   data	    bss	    dec	    hex	filename
-    696	      8	   1568	   2272	    8e0	3_EMBEDDED_HELLO_WORLD.elf
+    728	      8	   1568	   2304	    900	09_EMBEDDED_LED_ON.elf
 Finished building: default.size.stdout
- 
-Finished building: 3_EMBEDDED_HELLO_WORLD.list
- 
-15:43:28 **** Clean-only build of configuration Debug for project 9_EMBEDDED_LED_ON ****
-make -j8 clean 
-rm -rf ./Startup/startup_stm32f401retx.d ./Startup/startup_stm32f401retx.o
-rm -rf ./Src/main.cyclo ./Src/main.d ./Src/main.o ./Src/main.su ./Src/syscalls.cyclo ./Src/syscalls.d ./Src/syscalls.o ./Src/syscalls.su ./Src/sysmem.cyclo ./Src/sysmem.d ./Src/sysmem.o ./Src/sysmem.su
-rm -rf 3_EMBEDDED_HELLO_WORLD.elf 3_EMBEDDED_HELLO_WORLD.list 3_EMBEDDED_HELLO_WORLD.map default.size.stdout
- 
-15:43:28 **** Incremental Build of configuration Debug for project 9_EMBEDDED_LED_ON ****
-make -j8 all 
-arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -DDEBUG -c -x assembler-with-cpp -MMD -MP -MF"Startup/startup_stm32f401retx.d" -MT"Startup/startup_stm32f401retx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Startup/startup_stm32f401retx.o" "../Startup/startup_stm32f401retx.s"
-arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F401RETx -DSTM32F4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
-arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F401RETx -DSTM32F4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/syscalls.o"
-arm-none-eabi-gcc "../Src/sysmem.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F401RETx -DSTM32F4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/sysmem.o"
-arm-none-eabi-gcc -o "9_EMBEDDED_LED_ON.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/sleman/_git/C-EMBEDDED-NOTES/9_EMBEDDED_LED_ON/STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="9_EMBEDDED_LED_ON.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: 9_EMBEDDED_LED_ON.elf
- 
-arm-none-eabi-size  9_EMBEDDED_LED_ON.elf 
-arm-none-eabi-objdump -h -S 9_EMBEDDED_LED_ON.elf  > "9_EMBEDDED_LED_ON.list"
-   text	   data	    bss	    dec	    hex	filename
-    712	      8	   1568	   2288	    8f0	9_EMBEDDED_LED_ON.elf
-Finished building: default.size.stdout
- 
-Finished building: 9_EMBEDDED_LED_ON.list
- 
-15:43:41 **** Clean-only build of configuration Debug for project 9_EMBEDDED_LED_ON ****
-make -j8 clean 
-rm -rf ./Startup/startup_stm32f401retx.d ./Startup/startup_stm32f401retx.o
-rm -rf ./Src/main.cyclo ./Src/main.d ./Src/main.o ./Src/main.su ./Src/syscalls.cyclo ./Src/syscalls.d ./Src/syscalls.o ./Src/syscalls.su ./Src/sysmem.cyclo ./Src/sysmem.d ./Src/sysmem.o ./Src/sysmem.su
-rm -rf 9_EMBEDDED_LED_ON.elf 9_EMBEDDED_LED_ON.list 9_EMBEDDED_LED_ON.map default.size.stdout
- 
-15:43:41 **** Incremental Build of configuration Debug for project 9_EMBEDDED_LED_ON ****
-make -j8 all 
-arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -DDEBUG -c -x assembler-with-cpp -MMD -MP -MF"Startup/startup_stm32f401retx.d" -MT"Startup/startup_stm32f401retx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Startup/startup_stm32f401retx.o" "../Startup/startup_stm32f401retx.s"
-arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F401RETx -DSTM32F4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
-arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F401RETx -DSTM32F4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/syscalls.o"
-arm-none-eabi-gcc "../Src/sysmem.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F401RETx -DSTM32F4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/sysmem.o"
-arm-none-eabi-gcc -o "9_EMBEDDED_LED_ON.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/sleman/_git/C-EMBEDDED-NOTES/9_EMBEDDED_LED_ON/STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="9_EMBEDDED_LED_ON.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: 9_EMBEDDED_LED_ON.elf
- 
-arm-none-eabi-size  9_EMBEDDED_LED_ON.elf 
-arm-none-eabi-objdump -h -S 9_EMBEDDED_LED_ON.elf  > "9_EMBEDDED_LED_ON.list"
-   text	   data	    bss	    dec	    hex	filename
-    716	      8	   1568	   2292	    8f4	9_EMBEDDED_LED_ON.elf
-Finished building: default.size.stdout
- 
-Finished building: 9_EMBEDDED_LED_ON.list
- 
-15:44:58 **** Clean-only build of configuration Debug for project 9_EMBEDDED_LED_ON ****
-make -j8 clean 
-rm -rf ./Startup/startup_stm32f401retx.d ./Startup/startup_stm32f401retx.o
-rm -rf ./Src/main.cyclo ./Src/main.d ./Src/main.o ./Src/main.su ./Src/syscalls.cyclo ./Src/syscalls.d ./Src/syscalls.o ./Src/syscalls.su ./Src/sysmem.cyclo ./Src/sysmem.d ./Src/sysmem.o ./Src/sysmem.su
-rm -rf 9_EMBEDDED_LED_ON.elf 9_EMBEDDED_LED_ON.list 9_EMBEDDED_LED_ON.map default.size.stdout
- 
-15:44:58 **** Incremental Build of configuration Debug for project 9_EMBEDDED_LED_ON ****
-make -j8 all 
-arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -DDEBUG -c -x assembler-with-cpp -MMD -MP -MF"Startup/startup_stm32f401retx.d" -MT"Startup/startup_stm32f401retx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Startup/startup_stm32f401retx.o" "../Startup/startup_stm32f401retx.s"
-arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F401RETx -DSTM32F4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
-arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F401RETx -DSTM32F4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/syscalls.o"
-arm-none-eabi-gcc "../Src/sysmem.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F401RETx -DSTM32F4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/sysmem.o"
-arm-none-eabi-gcc -o "9_EMBEDDED_LED_ON.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/sleman/_git/C-EMBEDDED-NOTES/9_EMBEDDED_LED_ON/STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="9_EMBEDDED_LED_ON.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: 9_EMBEDDED_LED_ON.elf
- 
-arm-none-eabi-size  9_EMBEDDED_LED_ON.elf 
-arm-none-eabi-objdump -h -S 9_EMBEDDED_LED_ON.elf  > "9_EMBEDDED_LED_ON.list"
-   text	   data	    bss	    dec	    hex	filename
-    728	      8	   1568	   2304	    900	9_EMBEDDED_LED_ON.elf
-Finished building: default.size.stdout
- 
-Finished building: 9_EMBEDDED_LED_ON.list
- 
-15:45:13 **** Clean-only build of configuration Debug for project 9_EMBEDDED_LED_ON ****
-make -j8 clean 
-rm -rf ./Startup/startup_stm32f401retx.d ./Startup/startup_stm32f401retx.o
-rm -rf ./Src/main.cyclo ./Src/main.d ./Src/main.o ./Src/main.su ./Src/syscalls.cyclo ./Src/syscalls.d ./Src/syscalls.o ./Src/syscalls.su ./Src/sysmem.cyclo ./Src/sysmem.d ./Src/sysmem.o ./Src/sysmem.su
-rm -rf 9_EMBEDDED_LED_ON.elf 9_EMBEDDED_LED_ON.list 9_EMBEDDED_LED_ON.map default.size.stdout
- 
-15:45:13 **** Incremental Build of configuration Debug for project 9_EMBEDDED_LED_ON ****
-make -j8 all 
-arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -DDEBUG -c -x assembler-with-cpp -MMD -MP -MF"Startup/startup_stm32f401retx.d" -MT"Startup/startup_stm32f401retx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Startup/startup_stm32f401retx.o" "../Startup/startup_stm32f401retx.s"
-arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F401RETx -DSTM32F4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
-arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F401RETx -DSTM32F4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/syscalls.o"
-arm-none-eabi-gcc "../Src/sysmem.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F401RETx -DSTM32F4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/sysmem.o"
-arm-none-eabi-gcc -o "9_EMBEDDED_LED_ON.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/sleman/_git/C-EMBEDDED-NOTES/9_EMBEDDED_LED_ON/STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="9_EMBEDDED_LED_ON.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: 9_EMBEDDED_LED_ON.elf
- 
-arm-none-eabi-size  9_EMBEDDED_LED_ON.elf 
-arm-none-eabi-objdump -h -S 9_EMBEDDED_LED_ON.elf  > "9_EMBEDDED_LED_ON.list"
-   text	   data	    bss	    dec	    hex	filename
-    724	      8	   1568	   2300	    8fc	9_EMBEDDED_LED_ON.elf
-Finished building: default.size.stdout
- 
-Finished building: 9_EMBEDDED_LED_ON.list
- 
-15:45:23 **** Clean-only build of configuration Debug for project 9_EMBEDDED_LED_ON ****
-make -j8 clean 
-rm -rf ./Startup/startup_stm32f401retx.d ./Startup/startup_stm32f401retx.o
-rm -rf ./Src/main.cyclo ./Src/main.d ./Src/main.o ./Src/main.su ./Src/syscalls.cyclo ./Src/syscalls.d ./Src/syscalls.o ./Src/syscalls.su ./Src/sysmem.cyclo ./Src/sysmem.d ./Src/sysmem.o ./Src/sysmem.su
-rm -rf 9_EMBEDDED_LED_ON.elf 9_EMBEDDED_LED_ON.list 9_EMBEDDED_LED_ON.map default.size.stdout
- 
-15:45:23 **** Incremental Build of configuration Debug for project 9_EMBEDDED_LED_ON ****
-make -j8 all 
-arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -DDEBUG -c -x assembler-with-cpp -MMD -MP -MF"Startup/startup_stm32f401retx.d" -MT"Startup/startup_stm32f401retx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Startup/startup_stm32f401retx.o" "../Startup/startup_stm32f401retx.s"
-arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F401RETx -DSTM32F4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
-arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F401RETx -DSTM32F4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/syscalls.o"
-arm-none-eabi-gcc "../Src/sysmem.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F401RETx -DSTM32F4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/sysmem.o"
-arm-none-eabi-gcc -o "9_EMBEDDED_LED_ON.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/sleman/_git/C-EMBEDDED-NOTES/9_EMBEDDED_LED_ON/STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="9_EMBEDDED_LED_ON.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: 9_EMBEDDED_LED_ON.elf
- 
-arm-none-eabi-size  9_EMBEDDED_LED_ON.elf 
-arm-none-eabi-objdump -h -S 9_EMBEDDED_LED_ON.elf  > "9_EMBEDDED_LED_ON.list"
-   text	   data	    bss	    dec	    hex	filename
-    728	      8	   1568	   2304	    900	9_EMBEDDED_LED_ON.elf
-Finished building: default.size.stdout
- 
-Finished building: 9_EMBEDDED_LED_ON.list
- 
-15:47:55 **** Clean-only build of configuration Debug for project 9_EMBEDDED_LED_ON ****
-make -j8 clean 
-rm -rf ./Startup/startup_stm32f401retx.d ./Startup/startup_stm32f401retx.o
-rm -rf ./Src/main.cyclo ./Src/main.d ./Src/main.o ./Src/main.su ./Src/syscalls.cyclo ./Src/syscalls.d ./Src/syscalls.o ./Src/syscalls.su ./Src/sysmem.cyclo ./Src/sysmem.d ./Src/sysmem.o ./Src/sysmem.su
-rm -rf 9_EMBEDDED_LED_ON.elf 9_EMBEDDED_LED_ON.list 9_EMBEDDED_LED_ON.map default.size.stdout
- 
-15:47:55 **** Incremental Build of configuration Debug for project 9_EMBEDDED_LED_ON ****
-make -j8 all 
-arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -DDEBUG -c -x assembler-with-cpp -MMD -MP -MF"Startup/startup_stm32f401retx.d" -MT"Startup/startup_stm32f401retx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Startup/startup_stm32f401retx.o" "../Startup/startup_stm32f401retx.s"
-arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F401RETx -DSTM32F4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
-arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F401RETx -DSTM32F4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/syscalls.o"
-arm-none-eabi-gcc "../Src/sysmem.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F401RETx -DSTM32F4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/sysmem.o"
-arm-none-eabi-gcc -o "9_EMBEDDED_LED_ON.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/sleman/_git/C-EMBEDDED-NOTES/9_EMBEDDED_LED_ON/STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="9_EMBEDDED_LED_ON.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: 9_EMBEDDED_LED_ON.elf
- 
-arm-none-eabi-size  9_EMBEDDED_LED_ON.elf 
-arm-none-eabi-objdump -h -S 9_EMBEDDED_LED_ON.elf  > "9_EMBEDDED_LED_ON.list"
-   text	   data	    bss	    dec	    hex	filename
-    728	      8	   1568	   2304	    900	9_EMBEDDED_LED_ON.elf
-Finished building: default.size.stdout
- 
-Finished building: 9_EMBEDDED_LED_ON.list
- 
-15:51:13 **** Clean-only build of configuration Debug for project 9_EMBEDDED_LED_ON ****
-make -j8 clean 
-rm -rf ./Startup/startup_stm32f401retx.d ./Startup/startup_stm32f401retx.o
-rm -rf ./Src/main.cyclo ./Src/main.d ./Src/main.o ./Src/main.su ./Src/syscalls.cyclo ./Src/syscalls.d ./Src/syscalls.o ./Src/syscalls.su ./Src/sysmem.cyclo ./Src/sysmem.d ./Src/sysmem.o ./Src/sysmem.su
-rm -rf 9_EMBEDDED_LED_ON.elf 9_EMBEDDED_LED_ON.list 9_EMBEDDED_LED_ON.map default.size.stdout
- 
-15:51:14 **** Incremental Build of configuration Debug for project 9_EMBEDDED_LED_ON ****
-make -j8 all 
-arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -DDEBUG -c -x assembler-with-cpp -MMD -MP -MF"Startup/startup_stm32f401retx.d" -MT"Startup/startup_stm32f401retx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Startup/startup_stm32f401retx.o" "../Startup/startup_stm32f401retx.s"
-arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F401RETx -DSTM32F4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
-arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F401RETx -DSTM32F4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/syscalls.o"
-arm-none-eabi-gcc "../Src/sysmem.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F401RETx -DSTM32F4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/sysmem.o"
-arm-none-eabi-gcc -o "9_EMBEDDED_LED_ON.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/sleman/_git/C-EMBEDDED-NOTES/9_EMBEDDED_LED_ON/STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="9_EMBEDDED_LED_ON.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: 9_EMBEDDED_LED_ON.elf
- 
-arm-none-eabi-size  9_EMBEDDED_LED_ON.elf 
-arm-none-eabi-objdump -h -S 9_EMBEDDED_LED_ON.elf  > "9_EMBEDDED_LED_ON.list"
-   text	   data	    bss	    dec	    hex	filename
-    728	      8	   1568	   2304	    900	9_EMBEDDED_LED_ON.elf
-Finished building: default.size.stdout
- 
-Finished building: 9_EMBEDDED_LED_ON.list
  
