@@ -1,0 +1,10 @@
+05:51:57 **** Incremental Build of configuration Debug for project 11_EMBEDDED_LED_TOGGLE ****
+make -j8 all 
+arm-none-eabi-size  11_EMBEDDED_LED_TOGGLE.elf 
+   text	   data	    bss	    dec	    hex	filename
+    796	      8	   1568	   2372	    944	11_EMBEDDED_LED_TOGGLE.elf
+Finished building: default.size.stdout
+ 
+
+05:51:58 Build Finished. 0 errors, 0 warnings. (took 406ms)
+

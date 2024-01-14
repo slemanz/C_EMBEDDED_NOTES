@@ -20,3 +20,5 @@ __[8. BITWISE OPERATORS](08_BITWISE_OPERATORS/)__ - All about main bitwise opera
 __[9. EMBEDDED LED ON](09_EMBEDDED_LED_ON/)__ - Code to turn on a led with step by step guide.
 
 __[10. LOOPING](10_LOOPING/)__ - Summary about loops in C.
+
+__[11. LOOPING](11_EMBEDDED_LED_TOGGLE/)__ - Code to turn on and off with for delay.
