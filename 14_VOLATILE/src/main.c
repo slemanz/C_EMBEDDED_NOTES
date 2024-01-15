@@ -34,6 +34,9 @@ int main()
 
 	// the syntax to use volotile in the data of a pointer:
 	uint32_t volatile *exampleRegister = (uint32_t*)0x40023830;
+	
+	// WARNING: in a empty loop (for) the variable to count should be make a volatile or the 
+	// compiler should optimize the loop
 
 	return 0;
 }
