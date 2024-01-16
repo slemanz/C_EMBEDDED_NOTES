@@ -1,6 +1,6 @@
-# 12- CONST
+# 15- STRUCTURES
 
-About `volatile` type qualifier in C.
+Summary about main important things about structures.
 
 Use `make` to build in "./exec" file.
 

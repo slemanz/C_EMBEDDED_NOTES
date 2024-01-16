@@ -28,3 +28,5 @@ __[12. CONST](12_CONST/)__ - About `const` type qualifier in C.
 __[13. EMBEDDED PIN READ](13_EMBEDDED_PIN_READ/)__ - Code to turn a led on with a button.
 
 __[14. VOLATILE](14_VOLATILE/)__ - About `volatile` type qualifier in C.
+
+__[15. STRUCTURES](15_STRUCTURES/)__ - Summary about main important things about structures.
