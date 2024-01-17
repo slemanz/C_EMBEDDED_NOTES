@@ -30,3 +30,5 @@ __[13. EMBEDDED PIN READ](13_EMBEDDED_PIN_READ/)__ - Code to turn a led on with 
 __[14. VOLATILE](14_VOLATILE/)__ - About `volatile` type qualifier in C.
 
 __[15. STRUCTURES](15_STRUCTURES/)__ - Summary about main important things about structures.
+
+__[16. STRUCTURES BIT FIELDS](16_STRUCTURES_BIT_FIELD/)__ - Exercise to understand the bit fields with struct and its extraction content.
