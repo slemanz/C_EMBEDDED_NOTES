@@ -1,65 +1,46 @@
-08:26:33 **** Clean-only build of configuration Debug for project 11_EMBEDDED_LED_TOGGLE ****
-make -j8 clean 
-rm -rf ./Startup/startup_stm32f401retx.d ./Startup/startup_stm32f401retx.o
-rm -rf ./Src/main.cyclo ./Src/main.d ./Src/main.o ./Src/main.su ./Src/syscalls.cyclo ./Src/syscalls.d ./Src/syscalls.o ./Src/syscalls.su ./Src/sysmem.cyclo ./Src/sysmem.d ./Src/sysmem.o ./Src/sysmem.su
-rm -rf 11_EMBEDDED_LED_TOGGLE.elf 11_EMBEDDED_LED_TOGGLE.list 11_EMBEDDED_LED_TOGGLE.map default.size.stdout
- 
-08:26:34 **** Incremental Build of configuration Debug for project 11_EMBEDDED_LED_TOGGLE ****
-make -j8 all 
-arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -DDEBUG -c -x assembler-with-cpp -MMD -MP -MF"Startup/startup_stm32f401retx.d" -MT"Startup/startup_stm32f401retx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Startup/startup_stm32f401retx.o" "../Startup/startup_stm32f401retx.s"
-arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F401RETx -DSTM32F4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
-arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F401RETx -DSTM32F4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/syscalls.o"
-arm-none-eabi-gcc "../Src/sysmem.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F401RETx -DSTM32F4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/sysmem.o"
-arm-none-eabi-gcc -o "13_EMBEDDED_PIN_READ.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/sleman/_git/C-EMBEDDED-NOTES/13_EMBEDDED_PIN_READ/STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="13_EMBEDDED_PIN_READ.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: 13_EMBEDDED_PIN_READ.elf
- 
-arm-none-eabi-size  13_EMBEDDED_PIN_READ.elf 
-arm-none-eabi-objdump -h -S 13_EMBEDDED_PIN_READ.elf  > "13_EMBEDDED_PIN_READ.list"
-   text	   data	    bss	    dec	    hex	filename
-    796	      8	   1568	   2372	    944	13_EMBEDDED_PIN_READ.elf
-Finished building: default.size.stdout
- 
-Finished building: 13_EMBEDDED_PIN_READ.list
- 
-08:39:38 **** Build of configuration Debug for project 09_EMBEDDED_LED_ON ****
-make -j8 all 
-arm-none-eabi-size  09_EMBEDDED_LED_ON.elf 
-   text	   data	    bss	    dec	    hex	filename
-    728	      8	   1568	   2304	    900	09_EMBEDDED_LED_ON.elf
-Finished building: default.size.stdout
- 
-08:39:38 **** Incremental Build of configuration Debug for project 11_EMBEDDED_LED_TOGGLE ****
+04:54:09 **** Incremental Build of configuration Debug for project 18_EMBEDDED_BIT_FIELDS ****
 make -j8 all 
 arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F401RETx -DSTM32F4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
-arm-none-eabi-gcc -o "11_EMBEDDED_LED_TOGGLE.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/sleman/_git/C-EMBEDDED-NOTES/11_EMBEDDED_LED_TOGGLE/STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="11_EMBEDDED_LED_TOGGLE.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: 11_EMBEDDED_LED_TOGGLE.elf
+arm-none-eabi-gcc -o "18_EMBEDDED_BIT_FIELDS.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/sleman/_git/C-EMBEDDED-NOTES/18_EMBEDDED_BIT_FIELDS/STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="18_EMBEDDED_BIT_FIELDS.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 18_EMBEDDED_BIT_FIELDS.elf
  
-arm-none-eabi-size  11_EMBEDDED_LED_TOGGLE.elf 
-arm-none-eabi-objdump -h -S 11_EMBEDDED_LED_TOGGLE.elf  > "11_EMBEDDED_LED_TOGGLE.list"
+arm-none-eabi-size  18_EMBEDDED_BIT_FIELDS.elf 
+arm-none-eabi-objdump -h -S 18_EMBEDDED_BIT_FIELDS.elf  > "18_EMBEDDED_BIT_FIELDS.list"
    text	   data	    bss	    dec	    hex	filename
-    760	      8	   1568	   2336	    920	11_EMBEDDED_LED_TOGGLE.elf
+    776	      8	   1568	   2352	    930	18_EMBEDDED_BIT_FIELDS.elf
 Finished building: default.size.stdout
  
-Finished building: 11_EMBEDDED_LED_TOGGLE.list
+Finished building: 18_EMBEDDED_BIT_FIELDS.list
  
-08:39:39 **** Build of configuration Debug for project 13_EMBEDDED_PIN_READ ****
+04:54:51 **** Incremental Build of configuration Debug for project 18_EMBEDDED_BIT_FIELDS ****
 make -j8 all 
-arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -DDEBUG -c -x assembler-with-cpp -MMD -MP -MF"Startup/startup_stm32f401retx.d" -MT"Startup/startup_stm32f401retx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Startup/startup_stm32f401retx.o" "../Startup/startup_stm32f401retx.s"
 arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F401RETx -DSTM32F4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
-arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F401RETx -DSTM32F4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/syscalls.o"
-arm-none-eabi-gcc "../Src/sysmem.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F401RETx -DSTM32F4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/sysmem.o"
-arm-none-eabi-gcc -o "13_EMBEDDED_PIN_READ.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/sleman/_git/C-EMBEDDED-NOTES/13_EMBEDDED_PIN_READ/STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="13_EMBEDDED_PIN_READ.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: 13_EMBEDDED_PIN_READ.elf
+arm-none-eabi-gcc -o "18_EMBEDDED_BIT_FIELDS.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/sleman/_git/C-EMBEDDED-NOTES/18_EMBEDDED_BIT_FIELDS/STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="18_EMBEDDED_BIT_FIELDS.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 18_EMBEDDED_BIT_FIELDS.elf
  
-arm-none-eabi-size  13_EMBEDDED_PIN_READ.elf 
-arm-none-eabi-objdump -h -S 13_EMBEDDED_PIN_READ.elf  > "13_EMBEDDED_PIN_READ.list"
+arm-none-eabi-size  18_EMBEDDED_BIT_FIELDS.elf 
+arm-none-eabi-objdump -h -S 18_EMBEDDED_BIT_FIELDS.elf  > "18_EMBEDDED_BIT_FIELDS.list"
    text	   data	    bss	    dec	    hex	filename
-    796	      8	   1568	   2372	    944	13_EMBEDDED_PIN_READ.elf
+    776	      8	   1568	   2352	    930	18_EMBEDDED_BIT_FIELDS.elf
 Finished building: default.size.stdout
  
-Finished building: 13_EMBEDDED_PIN_READ.list
+Finished building: 18_EMBEDDED_BIT_FIELDS.list
  
-08:45:46 **** Incremental Build of configuration Debug for project 11_EMBEDDED_LED_TOGGLE ****
+04:57:16 **** Incremental Build of configuration Debug for project 18_EMBEDDED_BIT_FIELDS ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F401RETx -DSTM32F4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "18_EMBEDDED_BIT_FIELDS.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/sleman/_git/C-EMBEDDED-NOTES/18_EMBEDDED_BIT_FIELDS/STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="18_EMBEDDED_BIT_FIELDS.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 18_EMBEDDED_BIT_FIELDS.elf
+ 
+arm-none-eabi-size  18_EMBEDDED_BIT_FIELDS.elf 
+arm-none-eabi-objdump -h -S 18_EMBEDDED_BIT_FIELDS.elf  > "18_EMBEDDED_BIT_FIELDS.list"
+   text	   data	    bss	    dec	    hex	filename
+    768	      8	   1568	   2344	    928	18_EMBEDDED_BIT_FIELDS.elf
+Finished building: default.size.stdout
+ 
+Finished building: 18_EMBEDDED_BIT_FIELDS.list
+ 
+04:57:37 **** Build of configuration Debug for project 11_EMBEDDED_LED_TOGGLE ****
 make -j8 all 
 arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F401RETx -DSTM32F4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
 arm-none-eabi-gcc -o "11_EMBEDDED_LED_TOGGLE.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/sleman/_git/C-EMBEDDED-NOTES/11_EMBEDDED_LED_TOGGLE/STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="11_EMBEDDED_LED_TOGGLE.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
@@ -68,57 +49,43 @@ Finished building target: 11_EMBEDDED_LED_TOGGLE.elf
 arm-none-eabi-size  11_EMBEDDED_LED_TOGGLE.elf 
 arm-none-eabi-objdump -h -S 11_EMBEDDED_LED_TOGGLE.elf  > "11_EMBEDDED_LED_TOGGLE.list"
    text	   data	    bss	    dec	    hex	filename
-    804	      8	   1568	   2380	    94c	11_EMBEDDED_LED_TOGGLE.elf
+    796	      8	   1568	   2372	    944	11_EMBEDDED_LED_TOGGLE.elf
 Finished building: default.size.stdout
  
 Finished building: 11_EMBEDDED_LED_TOGGLE.list
  
-08:46:23 **** Incremental Build of configuration Debug for project 11_EMBEDDED_LED_TOGGLE ****
+04:58:17 **** Incremental Build of configuration Debug for project 18_EMBEDDED_BIT_FIELDS ****
+make -j8 all 
+arm-none-eabi-size  18_EMBEDDED_BIT_FIELDS.elf 
+   text	   data	    bss	    dec	    hex	filename
+    768	      8	   1568	   2344	    928	18_EMBEDDED_BIT_FIELDS.elf
+Finished building: default.size.stdout
+ 
+04:59:32 **** Incremental Build of configuration Debug for project 18_EMBEDDED_BIT_FIELDS ****
 make -j8 all 
 arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F401RETx -DSTM32F4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
-arm-none-eabi-gcc -o "11_EMBEDDED_LED_TOGGLE.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/sleman/_git/C-EMBEDDED-NOTES/11_EMBEDDED_LED_TOGGLE/STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="11_EMBEDDED_LED_TOGGLE.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: 11_EMBEDDED_LED_TOGGLE.elf
+arm-none-eabi-gcc -o "18_EMBEDDED_BIT_FIELDS.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/sleman/_git/C-EMBEDDED-NOTES/18_EMBEDDED_BIT_FIELDS/STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="18_EMBEDDED_BIT_FIELDS.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 18_EMBEDDED_BIT_FIELDS.elf
  
-arm-none-eabi-size  11_EMBEDDED_LED_TOGGLE.elf 
-arm-none-eabi-objdump -h -S 11_EMBEDDED_LED_TOGGLE.elf  > "11_EMBEDDED_LED_TOGGLE.list"
+arm-none-eabi-size  18_EMBEDDED_BIT_FIELDS.elf 
+arm-none-eabi-objdump -h -S 18_EMBEDDED_BIT_FIELDS.elf  > "18_EMBEDDED_BIT_FIELDS.list"
    text	   data	    bss	    dec	    hex	filename
-    804	      8	   1568	   2380	    94c	11_EMBEDDED_LED_TOGGLE.elf
+    712	      8	   1568	   2288	    8f0	18_EMBEDDED_BIT_FIELDS.elf
 Finished building: default.size.stdout
  
-Finished building: 11_EMBEDDED_LED_TOGGLE.list
+Finished building: 18_EMBEDDED_BIT_FIELDS.list
  
-08:49:39 **** Incremental Build of configuration Debug for project 13_EMBEDDED_PIN_READ ****
-make -j8 all 
-arm-none-eabi-size  13_EMBEDDED_PIN_READ.elf 
-   text	   data	    bss	    dec	    hex	filename
-    796	      8	   1568	   2372	    944	13_EMBEDDED_PIN_READ.elf
-Finished building: default.size.stdout
- 
-08:50:36 **** Incremental Build of configuration Debug for project 13_EMBEDDED_PIN_READ ****
+04:59:53 **** Incremental Build of configuration Debug for project 18_EMBEDDED_BIT_FIELDS ****
 make -j8 all 
 arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F401RETx -DSTM32F4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
-arm-none-eabi-gcc -o "13_EMBEDDED_PIN_READ.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/sleman/_git/C-EMBEDDED-NOTES/13_EMBEDDED_PIN_READ/STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="13_EMBEDDED_PIN_READ.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: 13_EMBEDDED_PIN_READ.elf
+arm-none-eabi-gcc -o "18_EMBEDDED_BIT_FIELDS.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/sleman/_git/C-EMBEDDED-NOTES/18_EMBEDDED_BIT_FIELDS/STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="18_EMBEDDED_BIT_FIELDS.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 18_EMBEDDED_BIT_FIELDS.elf
  
-arm-none-eabi-size  13_EMBEDDED_PIN_READ.elf 
-arm-none-eabi-objdump -h -S 13_EMBEDDED_PIN_READ.elf  > "13_EMBEDDED_PIN_READ.list"
+arm-none-eabi-size  18_EMBEDDED_BIT_FIELDS.elf 
+arm-none-eabi-objdump -h -S 18_EMBEDDED_BIT_FIELDS.elf  > "18_EMBEDDED_BIT_FIELDS.list"
    text	   data	    bss	    dec	    hex	filename
-    812	      8	   1568	   2388	    954	13_EMBEDDED_PIN_READ.elf
+    776	      8	   1568	   2352	    930	18_EMBEDDED_BIT_FIELDS.elf
 Finished building: default.size.stdout
  
-Finished building: 13_EMBEDDED_PIN_READ.list
- 
-08:51:50 **** Incremental Build of configuration Debug for project 13_EMBEDDED_PIN_READ ****
-make -j8 all 
-arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F401RETx -DSTM32F4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
-arm-none-eabi-gcc -o "13_EMBEDDED_PIN_READ.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/sleman/_git/C-EMBEDDED-NOTES/13_EMBEDDED_PIN_READ/STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="13_EMBEDDED_PIN_READ.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: 13_EMBEDDED_PIN_READ.elf
- 
-arm-none-eabi-size  13_EMBEDDED_PIN_READ.elf 
-arm-none-eabi-objdump -h -S 13_EMBEDDED_PIN_READ.elf  > "13_EMBEDDED_PIN_READ.list"
-   text	   data	    bss	    dec	    hex	filename
-    812	      8	   1568	   2388	    954	13_EMBEDDED_PIN_READ.elf
-Finished building: default.size.stdout
- 
-Finished building: 13_EMBEDDED_PIN_READ.list
+Finished building: 18_EMBEDDED_BIT_FIELDS.list
  

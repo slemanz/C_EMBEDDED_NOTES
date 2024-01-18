@@ -34,3 +34,5 @@ __[15. STRUCTURES](15_STRUCTURES/)__ - Summary about main important things about
 __[16. STRUCTURES BIT FIELDS](16_STRUCTURES_BIT_FIELDS/)__ - Exercise to understand the bit fields with struct and its extraction content.
 
 __[17. UNIONS](17_UNIONS/)__ - The unions and it main application in bit extration.
+
+__[18. EMBEDDED_BIT_FIELDS](18_EMBEDDED_BIT_FIELDS/)__ - Led toggle using bit fields to create a user abstraction.
