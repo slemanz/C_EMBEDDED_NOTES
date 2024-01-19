@@ -35,4 +35,6 @@ __[16. STRUCTURES BIT FIELDS](16_STRUCTURES_BIT_FIELDS/)__ - Exercise to underst
 
 __[17. UNIONS](17_UNIONS/)__ - The unions and it main application in bit extration.
 
-__[18. EMBEDDED_BIT_FIELDS](18_EMBEDDED_BIT_FIELDS/)__ - Led toggle using bit fields to create a user abstraction.
+__[18. EMBEDDED BIT FIELDS](18_EMBEDDED_BIT_FIELDS/)__ - Led toggle using bit fields to create a user abstraction.
+
+__[19. ARRAYS](19_ARRAYS/)__ - The basics about array.
