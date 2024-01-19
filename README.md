@@ -38,3 +38,5 @@ __[17. UNIONS](17_UNIONS/)__ - The unions and it main application in bit extrati
 __[18. EMBEDDED BIT FIELDS](18_EMBEDDED_BIT_FIELDS/)__ - Led toggle using bit fields to create a user abstraction.
 
 __[19. ARRAYS](19_ARRAYS/)__ - The basics about array.
+
+__[20. PRE-PROCESSOR](20_PRE_PROCESSOR/)__ - The basics about pre-processor directives.
